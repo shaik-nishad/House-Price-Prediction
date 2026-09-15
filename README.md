@@ -2,6 +2,21 @@
 
 A machine-learning project that estimates median house values from neighbourhood-level information. I first built a small Linear Regression demo using five sample records. I then upgraded it using a real dataset, model evaluation and an interactive Streamlit interface.
 
+## Live Demo
+
+[Open the deployed House Price Predictor](https://nishad-house-price-predictor.streamlit.app)
+
+## Model Results
+
+The models were trained on 16,512 rows and evaluated on 4,128 unseen test rows.
+
+| Model | MAE | RMSE | R² Score |
+|---|---:|---:|---:|
+| Linear Regression | $53,320 | $74,558 | 0.576 |
+| Random Forest Regressor | **$32,826** | **$50,564** | **0.805** |
+
+Random Forest produced the lowest prediction errors and the highest R² score, so it was selected for the interactive application.
+
 ## Why I built this
 
 I wanted to understand how a regression model moves from sample data to a prediction that a user can interact with. The project helped me practise data handling with Pandas, train/test splitting, regression metrics and building a simple interface.
